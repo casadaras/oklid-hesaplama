@@ -6,8 +6,8 @@ Bu formül ile, düzlemde veya üç boyutlu uzayda iki nokta arasındaki mesafey
 
 
 Not: Projede "min" fonksiyonunu kullandım. "min" fonksiyonu kullanılmadan "for" döngüsüyle;
-
-<code>points = [(1, 5), (5, 8), (8, 1), (9, 5)]
+```py
+points = [(1, 5), (5, 8), (8, 1), (9, 5)]
 def euclideanDistance(kordinat1, kordinat2):
     return pow(pow(kordinat1[0] - kordinat2[0], 2) + pow(kordinat1[1] - kordinat2[1], 2), 0.5)
 distances = []
@@ -17,7 +17,7 @@ for _ in range(len(points) -1):
         distances = euclideanDistance(points[_], points[i])
         if distances < min_distances:
             min_distances = distances        
-print("Minimum mesafe:", min_distances)</code>
-
+print("Minimum mesafe:", min_distances)
+```
 
 şeklinde kodlanabilir.
